@@ -413,6 +413,14 @@ static const struct dmi_system_id i2c_hid_dmi_desc_override_table[] = {
 		},
 		.driver_data = (void *)&sipodev_desc
 	},
+	{
+		.ident = "Vaio FE14",
+		.matches = {
+			DMI_EXACT_MATCH(DMI_SYS_VENDOR, "Positivo Bahia - VAIO"),
+			DMI_EXACT_MATCH(DMI_PRODUCT_NAME, "VJFE41F11X-XXXXXX"),
+		},
+		.driver_data = (void *)&sipodev_desc
+	},
 	{ }	/* Terminate list */
 };
 
